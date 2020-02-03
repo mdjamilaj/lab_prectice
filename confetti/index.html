@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .settings{
+            text-align: center;
+        }
+        button.btn.btn-info {
+            background: #0dc535;
+            width: 104px;
+            height: 34px;
+            border-radius: 3rem;
+            border: 1px solid rebeccapurple;
+        }
+        button.btn.btn-danger {
+            background: red;
+            width: 104px;
+            height: 34px;
+            border-radius: 3rem;
+            border: 1px solid rebeccapurple;
+        }
+        button.btn.btn-warning {
+            background: #00c4ff;
+            width: 104px;
+            height: 34px;
+            border-radius: 3rem;
+            border: 1px solid rebeccapurple;
+        }
+        button.btn.btn-info {
+        background: #0dc535;
+        width: 104px;
+        height: 34px;
+        z-index: 99999999999;
+        border-radius: 3rem;
+        border: 1px solid rebeccapurple;
+    }
+    
+    </style>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="confetti.js"></script>
+</head>
+<body onload="startConfetti();">
+    <div class="settings">
+        <button onclick="startConfetti();" class="btn btn-info">Start</button>
+        <button onclick="stopConfetti();" class="btn btn-danger">Stop</button>
+        <button onclick="toggleConfetti();" class="btn btn-warning">Toggle</button>
+    </div>
+</body>
+</html>

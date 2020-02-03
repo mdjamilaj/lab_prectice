@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #100000;
+    font-family: Avenir,  sans-serif;
+    color: #fff;
+  }
+  
+  p {
+    margin-top: 8rem;
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  div#carousel {
+    perspective: 1200px;
+    background: #100000;
+    padding-top: 5%;
+    font-size: 0;
+    margin-bottom: 3rem;
+  }
+  
+  figure#spinner {
+    transform-style: preserve-3d;
+    height: 300px;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50% -400px;
+    transition: 1s;
+  }
+  
+  figure#spinner figure {
+    width: 20%;
+    max-width: 500px;
+    position: absolute;
+    left: 40%;
+    transform-origin: 50% 50% -400px;
+    outline: 1px solid transparent;
+    overflow: hidden;
+    transition: 1s;
+  }
+  
+  figure#spinner figure.focus {
+    width: 26%;
+    left: 37%;
+    margin-top: -3rem;
+  }
+  
+  figure#spinner figure img {
+    width: 100%;
+  }
+  
+  figcaption {
+    /* position: absolute; */
+    text-align: center;
+    top: 100%;
+    width: 100%;
+    padding: .3rem;
+    z-index: 2;
+    font-size: 1.1rem;
+    background: #5600ff;
+    transition: .6s;
+    z-index: 9999 !important;
+    color: #ffffff !important;
+}
+  
+  figure#spinner figure.current:hover figcaption,
+  figure#spinner figure.current.caption figcaption {
+    top: 90%;
+    background: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+  }
+  
+  div#carousel ~ span {
+    color: #fff;
+    margin: 5%;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: 0.6s color;
+    position: relative;
+    margin-top: -6rem;
+    border-bottom: none;
+    line-height: 0;
+  }
+  
+  div#carousel ~ span:hover {
+    color: #888;
+    cursor: pointer;
+  }
+
+
+  @media (max-width: 375px){
+  span.ss-icon {
+    width: 48%;
+    transform: translate(67px, 10px);
+  }
+}
+  @media (max-width: 375px){
+    div#carousel {
+      perspective: 1200px;
+      background: #100000;
+      padding-top: 0;
+      font-size: 0;
+      width: 290px;
+      margin-bottom: 0rem;
+  }
+  figure#spinner figure {
+    width: 62%;
+    left: 21%;
+}
+  figure#spinner {
+    margin-top: 5rem;
+}
+div#carousel ~ span {
+  width: 26%;
+  transform: translate(15px, 10px);
+}
+}
+
+  @media (max-width: 320px){
+    div#carousel {
+      /* perspective: 1200px; */
+      background: #100000;
+      padding-top: 0;
+      font-size: 0;
+      margin-bottom: 0rem;
+  }
+    figure#spinner figure {
+      width: 66%;
+      left: 17%;
+  }
+  figure#spinner {
+    margin-top: 5rem;
+}
+div#carousel ~ span {
+  width: 15%;
+}
+}

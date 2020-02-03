@@ -1,0 +1,7 @@
+QR CODE GENERATOR USING PHP QR CODE Library
+
+
+It project i will create a qr_code form submit data etnry to a img 
+
+
+it's working

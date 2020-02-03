@@ -1,0 +1,103 @@
+/* Global */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  background-color: #2C3E50;
+  color: white;
+}
+
+/* Navbar - Progress Bar */
+.navbar {
+  position: fixed;
+  top: 5em;
+  left: 3em;
+  height: 175px;
+  z-index: 1;
+}
+
+.progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.progress-bar--increment {
+  background-color: #E74C5B;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 0;
+  border-radius: 5px;
+}
+
+.progress-bar--circle {
+  position: absolute;
+  bottom: 5px;
+  left: -21px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: all 0.1s;
+}
+
+.progress-bar--circle.active {
+  background-color: #E74C5B;
+}
+
+.navbar ul {
+    padding: 0 1em;
+    list-style: none;
+}
+
+.navbar ul li {
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.navbar ul li a {
+    font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+    transition: all 0.1s;
+}
+
+.active {
+ color: #E74C5B !important;
+}
+
+/* Main */
+header {
+  width: 100%;
+  height: 500px;
+}
+
+header h1, article h2, footer h3{
+    position: relative;
+    top: 50%;
+    font-size: 4em;
+    text-align: center;
+}
+
+article {
+    border: 1px solid white;
+    width: 100%;
+    height: 500px;
+}
+
+footer {
+    height: 500px;
+    width: 100%;
+}

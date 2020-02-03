@@ -1,0 +1,27 @@
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    width: 42%;
+    text-align: left;
+}
+
+button.show {
+    float: right;
+    border: none;
+    background: #2a80dc;
+    color: #fff;
+}
+.card {
+    display: none;
+}
+
+#accordion .card-header:after{
+    font-family: 'FontAwesome';
+    content: "\f068";
+    float: right;
+}
+
+#accordion .card-header:after{
+    
+}

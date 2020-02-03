@@ -1,0 +1,25 @@
+* {
+	margin: 0;
+	padding: 0;
+  }
+  
+  html, body {
+	background-color: rgb(215, 220, 235);
+  }
+  
+  div#container {
+	margin-top: 70px;
+	height: 2600px;
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+  }
+  
+  div#scroll-bar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 6px;
+	background-color: rgb(167, 85, 214);
+  }

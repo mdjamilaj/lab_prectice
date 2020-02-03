@@ -1,0 +1,61 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
+html {
+  /* background: linear-gradient(-134deg, #32DE62 0%, #8CE2A4 100%) no-repeat; */
+  width: 100%;
+  height: 100%;
+  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  font-size: 30px;
+  text-align: center;
+  min-width: 500px;
+}
+
+.wrap {
+  background: white;
+  border-radius: 10px;
+}
+
+#sentence {
+  overflow: hidden;
+  padding: 20px;
+}
+#adjList {
+  overflow: visible !important;
+  text-align: left;
+  display: inline;
+  position: relative;
+  height: 16px;
+}
+
+.adj {
+  white-space: nowrap;
+  list-style: none;
+  position: absolute;
+  line-height: .3em;
+  -webkit-transform: translateY(60px);
+          transform: translateY(60px);
+}
+
+.slide-in {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.slide-out {
+  -webkit-transform: translateY(-60px);
+          transform: translateY(-60px);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.btn {
+  width: 118px;
+  height: 47px;
+  padding: 0;
+  margin: 0 0px 26px 59px;
+  border-radius: 6rem;
+  border: 1px solid yellow;
+  background: #d800ff;
+  color: #fff;
+}
